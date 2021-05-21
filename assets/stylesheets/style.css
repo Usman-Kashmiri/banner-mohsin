@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+body {
+    font-family: arial;
+}
+
+#banner {
+    display: flex;
+    background: url("../imgs/bg.jpg") no-repeat center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    z-index: 2;
+    display: block;
+    padding: 2% 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.sub-heading {
+    margin-top: 25px;
+    font-size: 20px;
+    word-spacing: 7px;
+    color: #666;
+}
+
+.description {
+    margin-top: 30px;
+    font-size: 20px;
+    word-spacing: 7px;
+    line-height: 30px;
+    color: #666;
+}
+
+.bar {
+    display: inline-block;
+    border: 1px groove rgba(102, 102, 120, 0.7);
+    font-size: 17px;
+    margin-top: 30px;
+    padding: 7px 80px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: default;
+}
+
+.row {
+    display: flex;
+    height: auto;
+    padding-top: 3%;
+    justify-content: space-between;
+}
+
+.col-left,
+.col-right {
+    display: inline-block;
+}
+
+.col-left {
+    width: 70%;
+    padding: 3% 0;
+}
+
+.col-right {
+    width: 30%;
+}
+
+.col-left img {
+    width: 310px;
+}
+
+.col-right img {
+    width: 165px;
+}
+
+.badge {
+    display: flex;
+    z-index: 4;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 110px;
+    height: 110px;
+    border-radius: 75%;
+}
+
+.col-left .badge {
+    margin: -2% 0 0 -2%;
+}
+
+.col-right .badge {
+    margin: 3% 0 0 -3%;
+}
+
+.col-left .badge p {
+    position: relative;
+    font-weight: 700;
+    margin: 40% 0 0 15%;
+}
+
+.col-right .badge p {
+    position: relative;
+    font-weight: 700;
+    margin: 30% 0 0 15%;
+}
+
+.bottom-note {
+    font-size: 20px;
+    word-spacing: 7px;
+    color: #666;
+}
+
+@media screen and (max-width: 770px) {
+    .col-left img {
+        left: 10%;
+        position: relative;
+        width: 280px;
+    }
+    .col-right img {
+        width: 150px;
+    }
+    .col-left .badge {
+        margin: -3% 0 0 2%;
+    }
+    .col-right .badge {
+        margin: 4% 0 0 -4%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .heading {
+        font-size: 28px;
+    }
+    .sub-heading {
+        padding: 0 3%;
+        font-size: 16px;
+        word-spacing: 5px;
+    }
+    .description {
+        padding: 0 3%;
+        font-size: 16px;
+        word-spacing: 5px;
+        line-height: unset;
+    }
+    .bar {
+        padding: 7px 36px;
+    }
+    .row {
+        overflow: hidden;
+        display: block;
+        padding: 5%;
+    }
+    .col-left {
+        width: 100%;
+        padding: 0;
+    }
+    .col-right {
+        width: 100%;
+    }
+    .col-left img {
+        left: 0;
+        position: unset;
+        width: 250px;
+    }
+    .col-right img {
+        width: 180px;
+    }
+    .col-left {
+        position: relative;
+        left: 14%;
+    }
+    .col-right {
+        position: relative;
+        left: 25%;
+    }
+    .badge {
+        width: 80px;
+        height: 80px;
+    }
+    .col-left .badge {
+        margin: -4% 0 0 -8%;
+    }
+    .col-right .badge {
+        margin: 18% 0 0 -6%;
+    }
+    .col-left .badge p {
+        position: relative;
+        font-size: 12px;
+        margin: 40% 0 0 17%;
+    }
+    .col-right .badge p {
+        position: relative;
+        font-size: 12px;
+        margin: 30% 0 0 15%;
+    }
+    .bottom-note {
+        margin-top: -3%;
+        padding: 3%;
+        font-size: 16px;
+        word-spacing: 5px;
+    }
+}
