@@ -11,6 +11,8 @@ body {
     font-family: arial;
 }
 
+/* banner session style */
+
 #banner {
     display: flex;
     background: url("../imgs/bg.jpg") no-repeat center;
